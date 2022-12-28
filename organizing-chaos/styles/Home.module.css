@@ -1,9 +1,9 @@
 .upperDiv {
-  position: "fixed";
-  width: 100vw;
-  z-index: -1;
+  z-index: 0;
 }
 
 .slogan {
+  position: relative;
   font-size: 3em;
+  z-index: 1;
 }
