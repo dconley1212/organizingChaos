@@ -20,8 +20,8 @@ const Introduction = () => {
       </div>
       <div className={styles.lowerDiv}>
         <p className={styles.lowerDivP}>
-          Are you frustrated with to do apps not being customized to help manage
-          every day life? It should be easier, right?
+          Are you frustrated with to do apps not being customized to manage
+          every day life?
         </p>
         {/* <p className={styles.lowerDivP}></p> */}
         <button className={styles.button}>

@@ -16,13 +16,15 @@
 .lowerDiv {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
 
 .title {
   font-size: 4em;
   z-index: 1;
   border: 1px solid #000000;
-  width: 33%;
+  width: 48%;
   margin-left: 3rem;
 }
 
@@ -33,23 +35,23 @@
   color: var(--forest);
   border-radius: 8px;
   background-color: var(--off-white);
-  width: 45%;
+  width: 60%;
   padding: 0.3em 0.1em 0.3em 0.1em;
   margin-top: 5rem;
-  margin-left: 12rem;
+  margin-left: 6rem;
 }
 
 .lowerDivP {
   z-index: 1;
   width: 60%;
-  color: black;
+  color: var(--forest);
   font-size: 1.5em;
-  margin-top: 20rem;
-  margin-left: 19rem;
+  background-color: var(--off-white);
+  border-radius: 6px;
+  text-align: center;
 }
 
 .button {
   z-index: 1;
   width: 50%;
-  margin-left: 19rem;
 }
