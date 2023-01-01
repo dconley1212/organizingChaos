@@ -1,9 +1,55 @@
-.upperDiv {
+.background {
+  height: 500px;
   z-index: 0;
 }
 
-.slogan {
-  position: relative;
-  font-size: 3em;
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.upperDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.lowerDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 4em;
   z-index: 1;
+  border: 1px solid #000000;
+  width: 33%;
+  margin-left: 3rem;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 2em;
+  z-index: 1;
+  color: var(--forest);
+  border-radius: 8px;
+  background-color: var(--off-white);
+  width: 45%;
+  padding: 0.3em 0.1em 0.3em 0.1em;
+  margin-top: 5rem;
+  margin-left: 12rem;
+}
+
+.lowerDivP {
+  z-index: 1;
+  width: 60%;
+  color: black;
+  font-size: 1.5em;
+  margin-top: 20rem;
+  margin-left: 19rem;
+}
+
+.button {
+  z-index: 1;
+  width: 50%;
+  margin-left: 19rem;
 }
