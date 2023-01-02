@@ -14,16 +14,15 @@ const Introduction = () => {
           objectFit="cover"
           objectPosition="center"
         />
-        <h2 className={styles.slogan}>
+        {/* <h2 className={styles.slogan}>
           Home organization at your fingertips, literally.
-        </h2>
+        </h2> */}
       </div>
       <div className={styles.lowerDiv}>
         <p className={styles.lowerDivP}>
-          Are you frustrated with to do apps not being customized to manage
-          every day life?
+          Are you frustrated with apps not being customized to manage every day
+          life?
         </p>
-        {/* <p className={styles.lowerDivP}></p> */}
         <button className={styles.button}>
           Click here to change that feeling!
         </button>
