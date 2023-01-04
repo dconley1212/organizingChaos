@@ -24,6 +24,9 @@
   z-index: 1;
   background: linear-gradient(0deg, #b3e6cc, #39ac73);
   border-radius: 5px;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  padding: 1em;
 }
 
 .title {
@@ -34,19 +37,6 @@
   width: 80%;
   text-align: center;
 }
-
-/* .slogan {
-  text-align: center;
-  font-size: 2em;
-  z-index: 1;
-  color: var(--off-white);
-  border-radius: 8px;
-  background-color: var(--forest);
-  width: 60%;
-  padding: 0.3em 0.1em 0.3em 0.1em;
-  margin-top: 5rem;
-  margin-left: 2.5rem;
-} */
 
 .lowerDivP {
   z-index: 1;
@@ -61,15 +51,17 @@
 
 .button {
   z-index: 1;
-  width: 40%;
-  padding: 0.5em;
+  width: 50%;
+  padding: 0.4em;
   font-size: 0.9em;
-  color: var(--off-white);
+  color: #000000;
   cursor: pointer;
   border-radius: 8px;
-  background-color: #000000;
-  font-weight: 500;
+  background-color: transparent;
+  font-weight: 400;
+  border-color: #000000;
 }
 .button:hover {
   border-color: var(--off-white);
+  font-weight: 550;
 }
