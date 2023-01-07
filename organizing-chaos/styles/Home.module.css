@@ -6,7 +6,7 @@
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .upperDiv {
@@ -20,11 +20,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 33%;
   z-index: 1;
-  background: linear-gradient(0deg, #b3e6cc, #39ac73);
+  background: #888684;
   border-radius: 5px;
-  margin-left: 10rem;
+  margin-left: 15rem;
   margin-top: 10rem;
   padding: 1em;
 }
@@ -34,34 +34,36 @@
   z-index: 1;
   border: 1px solid #000000;
   padding: 0.7em;
-  width: 80%;
+  width: 60%;
   text-align: center;
 }
 
 .lowerDivP {
   z-index: 1;
-  width: 85%;
   padding: 0.6em;
   color: var(--off-white);
-  border: 5px solid black;
+  /* border: 5px solid black; */
   text-align: center;
   font-size: 1.5em;
   font-weight: 800;
+  border-bottom: 5px solid black;
 }
 
 .button {
   z-index: 1;
-  width: 50%;
-  padding: 0.4em;
+  width: 45%;
+  text-align: center;
+  padding: 0.4em 1.5em;
   font-size: 0.9em;
   color: #000000;
   cursor: pointer;
-  border-radius: 8px;
-  background-color: transparent;
+  border-radius: 60px;
+  background-color: var(--off-white);
   font-weight: 400;
   border-color: #000000;
 }
 .button:hover {
-  border-color: var(--off-white);
-  font-weight: 550;
+  border-color: var(--dark);
+  background: #b3ffb3;
+  color: var(--dark);
 }

@@ -20,12 +20,9 @@ const Introduction = () => {
       </div>
       <div className={styles.lowerDiv}>
         <p className={styles.lowerDivP}>
-          Are you frustrated with apps not being customized to manage every day
-          life?
+          Are you frustrated with the chaos of every day life?
         </p>
-        <button className={styles.button}>
-          Click here to change that feeling!
-        </button>
+        <button className={styles.button}>Begin Changing That Here</button>
       </div>
     </div>
   );

@@ -23,6 +23,7 @@
 body {
   color: var(--off-white);
   background-color: var(--dark);
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
