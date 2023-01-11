@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-// import Introduction from "./LandingPage/introduction";
-import Image from "next/image";
-import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash.jpg";
-import styles from "../styles/Home.module.css";
-import { ImArrowRight2 } from "react-icons/im";
+// import Image from "next/image";
+// import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash.jpg";
+// import styles from "../styles/Home.module.css";
+// import { ImArrowRight2 } from "react-icons/im";
+import Navbar from "../components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className={styles.main}>
+        <Navbar />
+        {/* <div className={styles.main}>
           <div className={styles.upperDiv}>
             <h1 className={styles.title}>Organize Chaos</h1>
             <Image
@@ -41,7 +42,7 @@ export default function Home() {
               <ImArrowRight2 size={16} />
             </button>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );
