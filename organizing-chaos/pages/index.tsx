@@ -4,11 +4,13 @@ import { Inter } from "@next/font/google";
 // import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash.jpg";
 // import styles from "../styles/Home.module.css";
 // import { ImArrowRight2 } from "react-icons/im";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const slogan: string = "An app customized for home life";
   return (
     <>
       <Head>
@@ -22,27 +24,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        {/* <div className={styles.main}>
-          <div className={styles.upperDiv}>
-            <h1 className={styles.title}>Organize Chaos</h1>
-            <Image
-              src={backgroundImg}
-              alt="Woman standing in her home"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-            />
-          </div>
-          <div className={styles.lowerDiv}>
-            <p className={styles.lowerDivP}>
-              Are you frustrated with the chaos of every day life?
-            </p>
-            <button className={styles.button}>
-              Yes? Start Here
-              <ImArrowRight2 size={16} />
-            </button>
-          </div>
-        </div> */}
+        <Header slogan={slogan} />
       </main>
     </>
   );

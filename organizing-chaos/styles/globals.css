@@ -22,8 +22,9 @@
 
 body {
   color: var(--off-white);
-  background-color: var(--dark);
+  background-color: var(--off-white);
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 h1 {
@@ -45,6 +46,7 @@ section {
   outline: 0.15rem dashed var(--off-white);
   outline-offset: 0.25rem;
 }
+
 main:focus {
   outline: none;
 }
