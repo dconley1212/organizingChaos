@@ -1,9 +1,8 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-// import Image from "next/image";
-// import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash.jpg";
+import Image from "next/image";
+import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash (1).jpg";
 import styles from "../styles/Home.module.css";
-// import { ImArrowRight2 } from "react-icons/im";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 
@@ -24,7 +23,20 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <Header>Take back control of your home life</Header>
+          <section className={styles.upperSection}>
+            <Header className={styles.heading}>
+              Take back control of your home life!
+            </Header>
+            <Image
+              className={styles.img}
+              src={backgroundImg}
+              alt="woman standing in room with ipad"
+            ></Image>
+            <p className={styles.homeParagraph}>
+              Customize your personal life with grorcery list templates, chores,
+              seasonal reminders, etc
+            </p>
+          </section>
         </Layout>
       </main>
     </>
