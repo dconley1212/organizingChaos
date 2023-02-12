@@ -8,15 +8,14 @@
 
 .heading {
   color: black;
-  /* border: 1px solid black; */
-  font-size: 2rem;
+  display: flex;
+  align-items: flex-start;
+  font-size: 2.3rem;
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   width: 80%;
-  padding: 1rem;
-  border: 2px solid black;
-  border-radius: 4px;
+  padding: 0.5rem;
 }
 
 .img {
@@ -24,6 +23,21 @@
   grid-column: 3/5;
   grid-row: 2/3;
   height: auto;
+}
+
+.buttonHome {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-self: center;
+  align-self: end;
+  width: 30%;
+  margin-right: 4.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #99ff99;
+  cursor: pointer;
 }
 
 .homeParagraph {
@@ -34,5 +48,5 @@
   text-align: center;
   margin-left: 7rem;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }

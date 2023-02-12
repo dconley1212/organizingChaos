@@ -5,6 +5,7 @@ import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplas
 import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+import Button from "../components/Button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function Home() {
               src={backgroundImg}
               alt="woman standing in room with ipad"
             ></Image>
+            <Button className={styles.buttonHome}>Start Here</Button>
             <p className={styles.homeParagraph}>
               Customize your personal life with grorcery list templates, chores,
               seasonal reminders, etc

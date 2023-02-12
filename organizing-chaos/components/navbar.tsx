@@ -1,5 +1,6 @@
 import styles from "../styles/Navbar.module.css";
 import { ImArrowRight2 } from "react-icons/im";
+// import Button from './Button'
 
 const Navbar = () => {
   return (
