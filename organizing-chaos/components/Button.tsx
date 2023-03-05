@@ -1,9 +1,6 @@
-interface ButtonProps {
-  children: string | JSX.Element;
-  className: string;
-}
+import { ReusableComponentProps } from "./commonTypes/Types";
 
-const Button = ({ children, className }: ButtonProps) => {
+const Button = ({ children, className }: ReusableComponentProps) => {
   return <button className={className}>{children}</button>;
 };
 

@@ -1,21 +1,28 @@
+.container {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100%;
+}
+
 .upperSection {
+  height: 80vh;
   display: grid;
-  grid-template-columns: 10% 30% 30% 10%;
-  grid-template-rows: 15% 50% 10%;
+  grid-template-columns: 10% 35% 25% 10%;
+  grid-template-rows: 15% 40% 10% 10%;
   column-gap: 3%;
-  row-gap: 3%;
+  /* row-gap: 3%; */
 }
 
 .heading {
   color: black;
   display: flex;
   align-items: flex-start;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
   width: 80%;
-  padding: 0.5rem;
+  margin-top: 5rem;
 }
 
 .img {
@@ -23,10 +30,11 @@
   grid-column: 3/5;
   grid-row: 2/3;
   height: auto;
+  margin-top: 3rem;
 }
 
 .buttonHome {
-  grid-row: 2/3;
+  grid-row: 3/4;
   grid-column: 2/3;
   font-size: 1rem;
   font-weight: 700;
@@ -46,7 +54,47 @@
   grid-column: 1/3;
   width: 80%;
   text-align: center;
-  margin-left: 7rem;
+  margin-left: 8rem;
   font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+}
+
+.middleSection {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 5% 50% 40% 10%;
+  grid-template-rows: 15% 50% 10%;
+  column-gap: 3%;
+  row-gap: 3%;
+  background-color: #888684;
+}
+
+.middleHeading {
+  color: var(--off-white);
+  display: flex;
+  align-items: flex-start;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-left: 1.8rem;
+  width: 70%;
+  padding: 0.5rem;
+}
+
+.rowImg {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+.middleParagraph {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  width: 80%;
+  text-align: center;
+  margin-top: 12.5rem;
   font-size: 1.3rem;
 }

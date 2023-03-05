@@ -1,9 +1,6 @@
-interface HeaderProps {
-  children: string | JSX.Element;
-  className: string;
-}
+import { ReusableComponentProps } from "./commonTypes/Types";
 
-const Header = (props: HeaderProps) => {
+const Header = (props: ReusableComponentProps) => {
   const { children, className } = props;
   return <h2 className={className}>{children}</h2>;
 };
