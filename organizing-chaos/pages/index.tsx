@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Button from "../components/Button";
+import { ImArrowRight2 } from "react-icons/im";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,33 +28,41 @@ export default function Home() {
         <Layout>
           <div className={styles.container}>
             <section className={styles.upperSection}>
-              <Header className={styles.heading}>
-                Find product market fit faster and win!
-              </Header>
+              <div className={styles.upperSectionCard}>
+                <Header className={styles.heading}>
+                  Find product market fit faster and win!
+                </Header>
+                <Button className={styles.buttonHome}>
+                  Start Today
+                  <ImArrowRight2 />
+                </Button>
+                <p className={styles.homeParagraph}>
+                  We organize your strategy so you can make confident decisions
+                  faster and nail your product market fit.
+                </p>
+              </div>
               <Image
                 className={styles.img}
                 src={backgroundImg}
                 alt="woman standing in room with ipad"
               ></Image>
-              <Button className={styles.buttonHome}>Start Today</Button>
-              <p className={styles.homeParagraph}>
-                We organize your strategy so you can make confident decisions
-                faster and nail your product market fit.
-              </p>
             </section>
             <section className={styles.middleSection}>
-              <Header className={styles.middleHeading}>
-                Avoid miscommunication on Strategy
-              </Header>
+              <div className={styles.middleSectionCard}>
+                <p className={styles.middleParagraph}>
+                  Communication across multiple orgs is hard. We help each org
+                  understand the core priorities in order to crush your goals.
+                </p>
+                <Button className={styles.buttonHome}>
+                  Learn More
+                  <ImArrowRight2 />
+                </Button>
+              </div>
               <Image
                 className={styles.rowImg}
                 src={rowImg}
                 alt="men rowing a boat in the ocean"
               ></Image>
-              <p className={styles.middleParagraph}>
-                Communication across multiple orgs is hard. We help each org
-                understand the core priorities in order to crush your goals.
-              </p>
             </section>
           </div>
         </Layout>
