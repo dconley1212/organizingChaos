@@ -68,3 +68,40 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .title {
+    margin-left: 1rem;
+  }
+  .mobile {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbarActive {
+    display: flex;
+    position: fixed;
+    top: 4.01rem;
+    right: 0rem;
+    width: 10rem;
+    height: 25vh;
+    background-color: #888684;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 0.8rem;
+  }
+}

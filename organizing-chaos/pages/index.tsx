@@ -53,7 +53,7 @@ export default function Home() {
                   Communication across multiple orgs is hard. We help each org
                   understand the core priorities in order to crush your goals.
                 </p>
-                <Button className={styles.buttonHome}>
+                <Button className={styles.middleSectionButton}>
                   Learn More
                   <ImArrowRight2 />
                 </Button>
