@@ -1,53 +1,47 @@
-.container {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
+.layout {
   height: 100%;
 }
 
 .upperSection {
-  height: 80vh;
   display: grid;
   grid-template-columns: 10% 35% 35% 10%;
   grid-template-rows: 10% 40% 40% 10%;
   column-gap: 2%;
+  padding: 6em 0em;
   /* row-gap: 1%; */
 }
 
 .upperSectionCard {
   display: flex;
-  margin-left: 3rem;
-  margin-top: 2.5rem;
-  width: 95%;
-  height: 60vh;
+  width: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   grid-column: 1/3;
-  grid-row: 2/3;
+  grid-row: 2/5;
 }
 
 .heading {
   color: black;
   display: flex;
-  font-size: 2.2rem;
+  font-size: 2.3em;
   text-align: center;
   width: 60%;
 }
 
 .img {
-  width: 80%;
+  width: auto;
   grid-column: 3/5;
-  grid-row: 2/3;
+  grid-row: 2/4;
   height: auto;
-  margin-top: 5.5rem;
-  margin-left: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .buttonHome {
   display: flex;
   justify-content: center;
   gap: 5%;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 600;
   width: 25%;
   padding: 1rem;
@@ -69,130 +63,172 @@
 }
 
 .middleSection {
-  height: 70vh;
   display: grid;
   grid-template-columns: 5% 45% 40% 10%;
-  grid-template-rows: 15% 50% 10%;
+  grid-template-rows: 20% 60% 20%;
   column-gap: 2%;
   /* row-gap: 3%; */
   background-color: #888684;
 }
 
+.middleHeader {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  margin-left: 5rem;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
 .middleSectionCard {
   display: flex;
-  width: 95%;
+  width: 90%;
   grid-column: 3/4;
-  grid-row: 2/3;
-  height: 50vh;
+  grid-row: 1/4;
+  margin-left: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px black;
 }
 
 .rowImg {
-  grid-row: 1/3;
+  grid-row: 2/3;
   grid-column: 1/3;
-  margin-top: 2.5rem;
+  margin-bottom: 5rem;
   margin-left: 2rem;
+  width: auto;
+  height: auto;
 }
 
 .middleParagraph {
   width: 80%;
   text-align: center;
-  /* margin-top: 12.5rem; */
   font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .middleSectionButton {
   display: flex;
   justify-content: center;
   gap: 5%;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 600;
-  width: 27%;
+  width: 30%;
   padding: 1rem;
   border-radius: 10px;
   background-color: #99ff99;
   cursor: pointer;
 }
 
+.middleSectionButton:hover {
+  background-color: #1aff1a;
+}
+
 @media screen and (max-width: 850px) {
   .upperSection {
-    margin-top: 2rem;
-    height: 40vh;
+    padding: 4em 0em;
   }
 
   .upperSectionCard {
-    height: 25vh;
+    margin-top: 3rem;
   }
   .heading {
     font-size: 1.5em;
+    margin-bottom: 1.5rem;
   }
 
   .buttonHome {
-    width: 40%;
+    width: 35%;
+    font-size: 0.8em;
+    margin-bottom: 1.5rem;
   }
 
   .homeParagraph {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-bottom: 1.5rem;
   }
   .img {
     margin-top: 5rem;
   }
-  .middleSection {
-    height: 50vh;
+
+  .middleHeader {
+    width: 70%;
+    font-size: 1.3em;
+    margin: 1.5rem 0rem 2rem 4rem;
+    text-align: center;
   }
 
   .middleSectionCard {
-    height: 100%;
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+  .middleSectionButton {
+    font-size: 0.8em;
+    width: 40%;
+  }
+  .rowImg {
+    margin: 1rem 0rem 0.5rem 1.5rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .container {
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    height: 100%;
-  }
   .upperSection {
     display: flex;
     flex-direction: column;
-    margin-top: 3.8rem;
-    height: 67vh;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 2em 0em;
   }
   .upperSectionCard {
-    margin-left: 0.3rem;
     width: 100%;
-    height: 30vh;
   }
   .heading {
     font-size: 1.5em;
+    margin-bottom: 1.5rem;
   }
   .buttonHome {
-    width: 40%;
+    width: 35%;
+    font-size: 0.9em;
+    margin-bottom: 1.5rem;
   }
   .homeParagraph {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-bottom: 1.5rem;
   }
 
   .img {
-    margin-top: 1.5rem;
-    margin-left: 2.5rem;
+    display: flex;
+    margin-top: 1rem;
   }
 
   .middleSection {
-    height: 90vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 2em 0em; */
+  }
+
+  .middleHeader {
+    width: 70%;
+    font-size: 1.3em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 0rem;
   }
 
   .middleSectionCard {
     width: 80%;
-    height: 32vh;
-    margin-left: 2.5rem;
-    margin-top: 1rem;
-    justify-content: flex-start;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+
+  .middleParagraph {
+    width: 90%;
+    text-align: center;
+    font-size: 1.1em;
   }
 
   .middleSectionButton {
@@ -208,6 +244,8 @@
     cursor: pointer;
   }
   .rowImg {
-    margin-left: 0rem;
+    margin: 0rem;
+    width: auto;
+    height: auto;
   }
 }
