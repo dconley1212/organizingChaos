@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import Image from "next/image";
 
 import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash.jpg";
@@ -9,8 +8,6 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import { ImArrowRight2 } from "react-icons/im";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const slogan: string = "An app customized for home life";
