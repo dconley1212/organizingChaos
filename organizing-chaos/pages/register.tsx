@@ -1,28 +1,43 @@
 import Layout from "../components/Layout";
+import Header from "../components/Header";
+import styles from "../styles/Register.module.css";
 
 function register() {
   return (
-    <Layout className="example">
-      <h1>Create your account!</h1>
-      <form>
-        <label>
-          Name
-          <input required autoComplete="name" placeholder="name"></input>
-        </label>
-        <label>
-          Email
-          <input required autoComplete="username" placeholder="Email"></input>
-        </label>
-        <label>
-          Password
+    <Layout className={styles.layout}>
+      <div className={styles.container}>
+        <Header className={styles.title}>Create an Account</Header>
+        <form className={styles.form}>
+          <label htmlFor="name" className={styles.label}>
+            Name:
+          </label>
           <input
+            className={styles.input}
+            name="name"
+            required
+            autoComplete="name"
+          ></input>
+          <label htmlFor="email" className={styles.label}>
+            Email:
+          </label>
+          <input
+            className={styles.input}
+            name="email"
+            required
+            autoComplete="username"
+          ></input>
+          <label htmlFor="password" className={styles.label}>
+            Password:
+          </label>
+          <input
+            className={styles.input}
             required
             autoComplete="new-password"
-            placeholder="Password"
+            name="password"
           ></input>
-        </label>
-        <button>Create Account</button>
-      </form>
+          <button className={styles.button}>Create Account</button>
+        </form>
+      </div>
     </Layout>
   );
 }

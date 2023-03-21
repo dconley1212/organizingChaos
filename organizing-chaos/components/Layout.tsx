@@ -5,7 +5,7 @@ const Layout = ({
   children,
   className,
 }: {
-  children: JSX.Element[];
+  children: JSX.Element[] | JSX.Element;
   className: string;
 }) => {
   return (

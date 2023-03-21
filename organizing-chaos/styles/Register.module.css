@@ -1,0 +1,38 @@
+.layout {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  margin: 10rem 25rem 5rem 25rem;
+  border: 1px solid black;
+}
+.title {
+  margin: 2rem;
+  color: black;
+  font-size: 1.7em;
+  padding: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.label {
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  margin-bottom: 1rem;
+}
+
+.button {
+  margin-bottom: 2rem;
+}
