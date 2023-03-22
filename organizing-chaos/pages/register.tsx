@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+import Button from "../components/Button";
 import styles from "../styles/Register.module.css";
+import { ImArrowRight2 } from "react-icons/im";
 
 function register() {
   return (
@@ -9,7 +11,7 @@ function register() {
         <Header className={styles.title}>Create an Account</Header>
         <form className={styles.form}>
           <label htmlFor="name" className={styles.label}>
-            Name:
+            Name
           </label>
           <input
             className={styles.input}
@@ -18,7 +20,7 @@ function register() {
             autoComplete="name"
           ></input>
           <label htmlFor="email" className={styles.label}>
-            Email:
+            Email
           </label>
           <input
             className={styles.input}
@@ -27,7 +29,7 @@ function register() {
             autoComplete="username"
           ></input>
           <label htmlFor="password" className={styles.label}>
-            Password:
+            Password
           </label>
           <input
             className={styles.input}
@@ -35,7 +37,9 @@ function register() {
             autoComplete="new-password"
             name="password"
           ></input>
-          <button className={styles.button}>Create Account</button>
+          <Button className={styles.button}>
+            Continue <ImArrowRight2 />
+          </Button>
         </form>
       </div>
     </Layout>
