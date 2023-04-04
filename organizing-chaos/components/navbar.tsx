@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import { ImArrowRight2 } from "react-icons/im";

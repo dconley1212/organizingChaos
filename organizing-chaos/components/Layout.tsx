@@ -3,13 +3,12 @@ import Footer from "./Footer";
 
 const Layout = ({
   children,
-  className,
 }: {
   children: JSX.Element[] | JSX.Element;
-  className: string;
+  // className: string;
 }) => {
   return (
-    <div className={className}>
+    <div>
       <Navbar />
       {children}
       <Footer />
