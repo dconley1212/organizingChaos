@@ -6,11 +6,11 @@ declare global {
   };
 }
 
-const { MONGODB_URI } = process.env;
+const { MONGODB_URI_DEVELOPMENT } = process.env;
 
-if (!MONGODB_URI) {
+if (!MONGODB_URI_DEVELOPMENT) {
   throw new Error(
-    "Please define the MONGODB_URI environment variable inside the .env.local"
+    "Please define the MONGODB_URI_DEVELOPMEMT environment variable inside the .env.local"
   );
 }
 
@@ -22,6 +22,7 @@ if (!cached) {
 
 export const connectMongo = async () => {
   if (cached.conn) return cached.conn;
-  cached.conn = await mongoose.connect(MONGODB_URI);
+  cached.conn = await mongoose.connect(MONGODB_URI_DEVELOPMENT);
+
   return cached.conn;
 };
