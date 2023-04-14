@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Home Organization</title>
+      <title>Product Market Fit</title>
       <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
       <meta name="description" content="Find Product Market Fit" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -11,7 +11,7 @@ interface Login {
   password: string;
 }
 
-const initialDisplay = false;
+const initialDisplay = true;
 
 const initialLogin = {
   email: "",
@@ -30,33 +30,39 @@ function login() {
     });
   };
   return (
-    <div className={styles.container}>
-      <Header className={styles.title}>Log In</Header>
-      <form className={styles.form}>
-        <label className={styles.label} htmlFor="email">
-          Email
-        </label>
-        <Input
-          className={styles.input}
-          name="email"
-          placeholder="Email"
-          autoComplete="username"
-          onChange={handleChange}
-        />
-        <label className={styles.label} htmlFor="password">
-          Password
-        </label>
-        <Input
-          className={styles.input}
-          name="password"
-          placeholder="Password"
-          autoComplete="current-password"
-          onChange={handleChange}
-        />
-        <Button className={styles.button}>
-          Continue <ImArrowRight2 />
-        </Button>
-      </form>
+    <div className={styles.layout}>
+      <div className={styles.container}>
+        <Header className={styles.title}>Log In</Header>
+        <form className={styles.form}>
+          <label className={styles.label} htmlFor="email">
+            Email
+          </label>
+          <Input
+            className={styles.input}
+            name="email"
+            placeholder="Email"
+            autoComplete="username"
+            onChange={handleChange}
+          />
+          {displayPassword ? (
+            <>
+              <label className={styles.label} htmlFor="password">
+                Password
+              </label>
+              <Input
+                className={styles.input}
+                name="password"
+                placeholder="Password"
+                autoComplete="current-password"
+                onChange={handleChange}
+              />
+            </>
+          ) : null}
+          <Button className={styles.button}>
+            Continue <ImArrowRight2 />
+          </Button>
+        </form>
+      </div>
     </div>
   );
 }

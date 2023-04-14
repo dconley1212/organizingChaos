@@ -1,7 +1,6 @@
 "use client";
 // import Head from "next/head";
 import Image from "next/image";
-
 import backgroundImg from "../public/images/bench-accounting-8D2k7a3wMKQ-unsplash.jpg";
 import rowImg from "../public/images/quino-al-dhGFLj3rI0Q-unsplash (1).jpg";
 import styles from "../styles/Home.module.css";
@@ -12,17 +11,6 @@ import { ImArrowRight2 } from "react-icons/im";
 export default function Home() {
   return (
     <>
-      {/* <Head>
-        <title>Home Organization</title>
-        <meta
-          name="description"
-          content="Organize your home or family life and reduce stress"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
-      {/* <main> */}
-      {/* <Layout className={styles.layout}> */}
       <section className={styles.upperSection}>
         <div className={styles.upperSectionCard}>
           <Header className={styles.heading}>
