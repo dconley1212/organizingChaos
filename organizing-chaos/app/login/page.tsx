@@ -5,6 +5,7 @@ import styles from "../../styles/Login.module.css";
 import { ImArrowRight2 } from "react-icons/im";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
+import { STATES } from "mongoose";
 
 interface Login {
   email: string;
@@ -24,10 +25,10 @@ function login() {
   const [loginCredentials, setLoginCredentials] = useState<Login>(initialLogin);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setLoginCredentials({
-      ...loginCredentials,
+    setLoginCredentials((state) => ({
+      ...state,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
   return (
     <div className={styles.layout}>
@@ -40,6 +41,7 @@ function login() {
           <Input
             className={styles.input}
             name="email"
+            value={loginCredentials.email}
             placeholder="Email"
             autoComplete="username"
             onChange={handleChange}
@@ -52,6 +54,7 @@ function login() {
               <Input
                 className={styles.input}
                 name="password"
+                value={loginCredentials.password}
                 placeholder="Password"
                 autoComplete="current-password"
                 onChange={handleChange}
