@@ -1,5 +1,11 @@
 import { model, models, Schema } from "mongoose";
 
+interface USER {
+  name: string;
+  email: string;
+  password: string;
+}
+
 const user = new Schema({
   name: {
     type: String,

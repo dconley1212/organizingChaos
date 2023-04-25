@@ -1,11 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Header from "../../components/Header";
 import Button from "../../components/Button";
 import styles from "../../styles/Register.module.css";
 import { ImArrowRight2 } from "react-icons/im";
 import Input from "../../components/Input";
-import { STATES } from "mongoose";
+import { registerCall } from "../../utils/api";
 
 interface RegisterInfo {
   name: string;
@@ -21,15 +21,30 @@ const intialState = {
 
 function register() {
   const [newUser, setNewUser] = useState<RegisterInfo>(intialState);
+  const [error, setError] = useState<String>("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNewUser((state) => ({ ...state, [e.target.name]: e.target.value }));
   };
 
+  const handleSubmit = useCallback(
+    async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      try {
+        await registerCall(newUser);
+      } catch (err) {
+        setError(error);
+      } finally {
+        setNewUser({ ...newUser });
+      }
+    },
+    [newUser.name, newUser.email, newUser.password]
+  );
+
   return (
     <div className={styles.container}>
       <Header className={styles.title}>Create an Account</Header>
-      <form className={styles.form}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <label htmlFor="name" className={styles.label}>
           Name
         </label>
