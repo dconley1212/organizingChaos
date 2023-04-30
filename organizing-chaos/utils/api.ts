@@ -21,6 +21,8 @@ async function fetcher(url: string, method: string, body: any) {
     },
   });
 
+  console.log(response);
+
   if (!response.ok) {
     throw new Error("API error");
     return;
@@ -31,10 +33,10 @@ async function fetcher(url: string, method: string, body: any) {
 }
 
 async function loginCall(body: Login) {
-  return fetcher("/login", "GET", body);
+  return fetcher("http://localhost:3000/api/sign-in", "GET", body);
 }
 
 async function registerCall(body: Register) {
-  return fetcher("/register", "POST", body);
+  return fetcher("http://localhost:3000/api/create-account", "POST", body);
 }
 export { fetcher, loginCall, registerCall };

@@ -24,5 +24,7 @@ export const connectMongo = async () => {
   if (cached.conn) return cached.conn;
   cached.conn = await mongoose.connect(MONGODB_URI_DEVELOPMENT);
 
+  console.log(cached.conn);
+
   return cached.conn;
 };
